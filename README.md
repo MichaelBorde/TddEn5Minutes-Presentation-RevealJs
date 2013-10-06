@@ -1,4 +1,4 @@
-TddEn5Minutes-Presentation-RevealJs
+Test-Driven Development en 5 minutes
 ===================================
 
-Présentation TDD en 5 minutes qui précède un kata
+Présentation TDD qui précède un kata.
