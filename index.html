@@ -195,22 +195,23 @@
 
         <script>
 
-            // Full list of configuration options available here:
-            // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
-                controls: true,
+                controls: false,
                 progress: true,
                 history: true,
                 center: true,
                 mouseWheel: true,
-                width: 960,
-                height: 700,
-                margin: 0.1,
 
-                theme: Reveal.getQueryHash().theme || 'beige', // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+                keyboard: {
+                    37: 'prev', // gauche
+                    38: null, // haut
+                    39: 'next', // droite
+                    40: null // bas
+                },
 
-                // Optional libraries used to extend on reveal.js
+                theme: Reveal.getQueryHash().theme || 'beige',
+                transition: Reveal.getQueryHash().transition || 'none',
+
                 dependencies: [
                     { src: 'lib/js/classList.js', condition: function () {
                         return !document.body.classList;
